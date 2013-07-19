@@ -8,7 +8,7 @@ This code was originally written by Hans Zandbelt.
 See example.php for an example of how to use the agent library. 
 Note that library functions start with an "as_" prefix.
 
-configuration
+Configuration
 -------------
 
 All library function calls require a parameter array containing configuration data. Two entries are relevant:
