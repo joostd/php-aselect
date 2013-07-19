@@ -76,6 +76,6 @@ $result = as_process($cfg, NULL, NULL, NULL, TRUE);
 
 print '<pre>' . htmlentities(print_r($result, TRUE)) . '</pre>';
 
-print '<a href="' . $_SERVER['SCRIPTNAME'] . '?request=logout">Logout</a>';
+print '<a href="' . (array_key_exists('SCRIPTNAME', $_SERVER) ? $_SERVER['SCRIPTNAME'] : '') . '?request=logout">Logout</a>';
 
 ?>

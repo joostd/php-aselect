@@ -121,7 +121,7 @@ function as_call($url, $req, $ssl = NULL) {
  */
 function as_get_self_url($path = NULL) {
 	$port = $_SERVER['SERVER_PORT'];
-	if ($_SERVER['HTTPS'] == 'on') {
+	if (array_key_exists('HTTPS', $_SERVER) && $_SERVER['HTTPS'] == 'on') {
 		$proto = 'https';
 		if ($port == 443) $port = NULL;
 	} else {
