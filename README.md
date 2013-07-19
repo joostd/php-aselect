@@ -56,3 +56,17 @@ Upon succesful authentication, i.e. `as_process` returns something different fro
 This is dependant on the session management used by your application, i.e. use `session_start` and set an "authenticated" variable in `$_SESSION`
 
 Also, your apploication should redirect to a "clean" URL to avoid unnecessary re-authentication when users reload the page.
+
+Test
+----
+
+You can easily test the example script using a php 5.4 build-in web server by running the following command and pointing your browser to http://localhost:8080/example.php
+
+	$ php -S localhost:8080
+	PHP 5.4.17 Development Server started at Fri Jul 19 16:33:25 2013
+	Listening on http://localhost:8080
+	Document root is /path/to/php-aselect
+	Press Ctrl-C to quit.
+	[Fri Jul 19 16:33:30 2013] ::1:51099 [302]: /
+	[Fri Jul 19 16:33:35 2013] ::1:51102 [200]: /?rid=ffd5f592bd398c6ce812a1b3ec5340b6&a-select-server=sp.example.org&aselect_credentials=P/71M8qjygd3Pem8HFP/81ERDPECYrS9W1JxqEN1nSoH6vFuaLOc0wKIuvb5XhYgXn6sbFXHVdhoNqe6/Xjn-ZluJoFFIzV96fPPs20mnSCN5TFoyKaJMNkn6rVEepUtSxPDsjs/B1vphqVdHmWGaq62mi2wfi/W7FiW/floZUw_
+	[Fri Jul 19 16:33:58 2013] ::1:51106 [302]: /?request=logout
