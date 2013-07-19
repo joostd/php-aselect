@@ -1,0 +1,7 @@
+/**
+ * $Id: TODO 23 2008-10-24 09:57:46Z hansz $
+ */
+ 
+- embed this code as an A-Select plugin in a generic "SURFnet SP authentication" library
+- how to integrate with (possibly non-cookie-based) session management of the application
+- this library now depends on (heavy-weight) php-curl for the HTTP GET part; that can probably be avoided?
